@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light nav-tabs">
+    <a  style="cursor: pointer;" class="navbar-brand">Recipe Book</a>
+    <button (click)="onToggleNavbarCollapsed()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <!-- <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>  -->
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link">Recipes</a></li>
+            <li class="nav-item"><a class="nav-link">Authenticate</a></li>
+            <li class="nav-item"><a class="nav-link">Shopping List</a></li>            
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="cursor: pointer;">Manage</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" style="cursor: pointer;">Save Data</a>
+                    <a class="dropdown-item" style="cursor: pointer;">Fetch Data</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
