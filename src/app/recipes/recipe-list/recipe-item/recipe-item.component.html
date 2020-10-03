@@ -1,1 +1,9 @@
-<p>recipe-item works!</p>
+<a style="cursor: pointer;" class="list-group-item list-group-item-action clearfix">
+    <div class="float-left">
+        <h4>{{recipe.name}}</h4>
+        <p>{{recipe.description}}</p>
+    </div>
+    <div class="float-right">
+        <img src="{{recipe.imagePath}}" alt="{{recipe.name}}" style="max-height: 50px;">
+    </div>
+</a>
