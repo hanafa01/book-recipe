@@ -12,4 +12,8 @@ export class RecipeService {
 
   constructor() { }
 
+  getRecipe(id: number){
+    return this.recipes[id];
+  }
+
 }
