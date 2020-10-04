@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Ingredient } from '../shared/ingredient.model';
+import { ShoppingListService } from '../shopping-list/shpping-list.service';
 import { Recipe } from './recipe.model';
 
 @Injectable({
@@ -17,10 +18,14 @@ export class RecipeService {
     ])
   ];
 
-  constructor() { }
+  constructor(private slService: ShoppingListService) { }
 
   getRecipe(id: number){
     return this.recipes[id];
+  }
+
+  addIngredientsToShoppingList(ingredients: Ingredient[]){
+    this.slService.addIngredients(ingredients);
   }
 
 }

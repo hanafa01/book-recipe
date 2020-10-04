@@ -18,9 +18,13 @@ export class ShoppingListService {
   }
 
   addIngredients(ingredients: Ingredient[]){
-    for(let ingredient of ingredients){
+    /*for(let ingredient of ingredients){
       this.addIngredient(ingredient);
-    }
+    }*/
+
+    /* OR */
+
+    this.ingredients.push(...ingredients);
   }
 
 
