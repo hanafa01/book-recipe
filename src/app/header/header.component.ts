@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   navbarCollapsed: Boolean = true;
-  dropdown: Boolean = false;
 
   constructor() { }
 
@@ -17,10 +16,6 @@ export class HeaderComponent implements OnInit {
 
   onToggleNavbarCollapsed(): void {
     this.navbarCollapsed = !this.navbarCollapsed;
-  }
-
-  dropdownclick(){
-    this.dropdown = !this.dropdown;
   }
 
 }

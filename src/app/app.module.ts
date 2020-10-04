@@ -12,6 +12,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { RouterModule, Routes } from '@angular/router';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { FormsModule } from '@angular/forms';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/recipes', pathMatch:'full'},
@@ -32,7 +33,8 @@ const appRoutes: Routes = [
     RecipeDetailComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    RecipeStartComponent
+    RecipeStartComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
