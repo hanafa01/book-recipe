@@ -12,4 +12,8 @@ export class ShoppingListService {
   ];
 
   constructor() { }
+
+  addIngredient(ingradient: Ingredient){
+    this.ingredients.push(ingradient);
+  }
 }
