@@ -28,6 +28,10 @@ export class ShoppingListService {
     this.ingredients[index] = newIngradient;
   }
 
+  deleteIngredient(index: number){
+    this.ingredients.splice(index, 1);
+  }
+
   addIngredients(ingredients: Ingredient[]){
     /*for(let ingredient of ingredients){
       this.addIngredient(ingredient);
